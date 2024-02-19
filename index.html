@@ -478,7 +478,7 @@
                     "
                   />
                   <source
-                    media="(max-width: 767px )"
+                    media="(max-width: 768px )"
                     srcset="
                       ./images/bank-app-mob.jpg   1x,
                       ./images/bank-app-mobx2.jpg 2x
@@ -486,7 +486,7 @@
                   />
                   <img
                     class="portfolio-item-img"
-                    src="./images/bank-app-tab.jpg "
+                    src="./images/bank-app.jpg "
                     alt="bank app"
                     width="360"
                   />
@@ -504,12 +504,35 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-item-wrap">
-                <img
-                  class="portfolio-item-img"
-                  src="./images/cashless-pay.jpg"
-                  alt="cashless pay"
-                  width="360"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px )"
+                    srcset="
+                      ./images/cashless-pay.jpg   1x,
+                      ./images/cashless-payx2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px )"
+                    srcset="
+                      ./images/cashless-pay-tab.jpg   1x,
+                      ./images/cashless-pay-tabx2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 768px )"
+                    srcset="
+                      ./images/cashless-pay-mob.jpg   1x,
+                      ./images/cashless-pay-mobx2.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-item-img"
+                    src="./images/cashless-pay.jpg"
+                    alt="cashless pay"
+                    width="360"
+                  />
+                </picture>
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App

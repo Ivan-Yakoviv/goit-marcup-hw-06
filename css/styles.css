@@ -214,6 +214,12 @@ img {
   text-transform: capitalize;
 }
 
+.mob-nav-link:hover,
+.mob-nav-link:focus {
+  color: #404bbf;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .mob-address {
   font-style: normal;
   margin-bottom: 48px;

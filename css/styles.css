@@ -308,7 +308,7 @@ img {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .hero-btn {
@@ -1117,5 +1117,16 @@ img {
         ),
         url(../images/people-office-tab-2x.jpg);
     }
+  }
+
+  .hero-container {
+    gap: 36px;
+  }
+
+  .hero-title {
+    min-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
   }
 }

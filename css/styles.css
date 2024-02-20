@@ -52,7 +52,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -63,7 +63,7 @@ img {
     max-width: 1158px;
     padding: 0 15px;
   }
-}
+} */
 
 /*header*/
 
@@ -308,7 +308,6 @@ img {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  /* text-transform: capitalize; */
 }
 
 .hero-btn {
@@ -348,17 +347,7 @@ img {
   padding: 96px;
 }
 
-.container {
-}
-
-.features-container {
-}
-
-.visually-hidden {
-}
-
 .features-list {
-  /* display: flex; */
   display: flex;
   flex-direction: column;
   /* gap: 24px; */
@@ -432,7 +421,7 @@ img {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   /* gap: 24px; */
   gap: 72px;
@@ -1055,11 +1044,12 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
   .features > .container,
   .portfolio > .container {
     max-width: 736px;
-    margin-left: 16px;
-    margin-right: 16px;
   }
 
   .logo {
@@ -1100,7 +1090,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-tab-1x.jpg);
-    padding: 72px 0;
+    padding: 112px 0;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -1124,9 +1114,41 @@ img {
   }
 
   .hero-title {
-    min-width: 496px;
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+  }
+
+  .features {
+    /* flex-direction: row; */
+    padding: 96px 16px;
+  }
+
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .features-item {
+    align-items: flex-start;
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 72px;
+  }
+
+  .team {
+    padding: 96px 108px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 64px;
   }
 }

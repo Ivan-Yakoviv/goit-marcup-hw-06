@@ -106,9 +106,6 @@ img {
   display: none;
 }
 
-/* .header-menu-item {
-}
-
 .header-menu-link {
   color: #2e2f42;
   font-size: 16px;
@@ -138,11 +135,11 @@ img {
   border-radius: 2px;
   height: 4px;
   width: 100%;
-} */
+}
 
 .header-address {
-  font-style: normal;
-  margin-left: auto;
+  /* font-style: normal;
+  margin-left: auto; */
   display: none;
 }
 
@@ -152,7 +149,7 @@ img {
   gap: 40px;
 }
 
-/* .header-address-link {
+.header-address-link {
   color: #434455;
   font-style: normal;
   font-size: 16px;
@@ -164,7 +161,7 @@ img {
 .header-address-link:hover,
 .header-address-link:focus {
   color: #404bbf;
-} */
+}
 
 .open-menu-btn {
   padding: 0;
@@ -977,7 +974,7 @@ img {
   background-color: transparent;
   padding: 8px 16px;
   font-size: 12px;
-  line-height: 1.17; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   resize: none;
@@ -1057,5 +1054,68 @@ img {
   background: #404bbf;
 }
 
-.privacy-policy {
+@media screen and (min-width: 768px) {
+  .features > .container,
+  .portfolio > .container {
+    max-width: 736px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
+  .header-menu-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-address {
+    display: flex;
+
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .header-address-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header-address-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  .open-menu-btn {
+    display: none;
+  }
+
+  .hero {
+    background-color: rgba(46, 47, 66, 1);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab-1x.jpg);
+    padding: 72px 0;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tab-2x.jpg);
+    }
+  }
 }

@@ -401,7 +401,7 @@ img {
 }
 
 .team-item-cont {
-  padding: 32px auto;
+  padding: 32px 0;
   /* display: flex;
   flex-direction: column;
   gap: 8px; */
@@ -1310,10 +1310,6 @@ img {
 
   .team-item {
     width: calc((100% - 72px) / 4);
-  }
-
-  .team-item-cont {
-    padding: 32px 0;
   }
 
   .portfolio {

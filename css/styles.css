@@ -1003,6 +1003,11 @@ img {
     max-width: 768px;
   }
 
+  .team > .container,
+  .footer > .container {
+    max-width: 584px;
+  }
+
   .features > .container,
   .portfolio > .container {
     max-width: 736px;
@@ -1097,7 +1102,7 @@ img {
   }
 
   .team {
-    padding: 96px 108px;
+    padding: 96px 0px;
   }
 
   .team-list {
@@ -1132,7 +1137,7 @@ img {
   }
 
   .footer {
-    padding: 96px 108px;
+    padding: 96px 0px;
   }
 
   .footer-container {
@@ -1181,6 +1186,11 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
+    max-width: 1158px;
+  }
+
+  .team > .container,
+  .footer > .container {
     max-width: 1158px;
   }
 

@@ -150,6 +150,7 @@ img {
 }
 
 .mob-menu {
+  display: flex;
   position: fixed;
   top: 0;
   width: 100%;
@@ -158,6 +159,9 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  padding: 72px 16px 40px 16px;
+  flex-direction: column;
+  left: 0;
 }
 
 .mob-menu-cont {
@@ -170,11 +174,14 @@ img {
   justify-content: space-between;
 }
 
+.mob-menu-nav {
+  margin-bottom: auto;
+}
+
 .mob-nav-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: auto;
 }
 
 .mob-nav-link {
